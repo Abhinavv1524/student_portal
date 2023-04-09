@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get your Punishment Done</title>
+    <link rel="stylesheet" href="CSS/style3.css">
+    <script>
+        const arr = [
+            "Get chocolate to eveyrone in your class",
+            "G-pay 100 ruppes to 6283652527",
+            "Dance on kajra re kajra re in class",
+            "Confess your Crush",
+            "Sing any Bhojpuri song",
+            "Submit yout phone to teacher in her lecture for 3 days",
+            "Complete Practical file of any 5 Students",
+            "Clean any 3 Particular classes",
+            "Murga Bano"
+        ]
+        function punish() {
+            const random = arr[Math.floor(Math.random() * (arr.length))];
+            document.getElementById("sp").innerHTML = random;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/logo.jpg" alt="">
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="/index2.html" target="_blank">Home</a></li>
+                    <li><a href="/attendance.html" target="_blank">Current Week Attendance</a></li>
+                    <li><a href="/punishment.html">Punishmnet Cell</a></li>
+                    <li><a href="/class_discussion.html" target="_blank">Class Discussion</a></li>
+                    <li><a href="/notes_section.html" target="_blank">Notes Section</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>WELCOME TO PUNISHMENT CELL</h1>
+    <div id="both">
+        <section id="content">
+            <video src="/img/punishment.mp4" autoplay loop></video>
+        </section>
+        <section id="punish">
+            <div class="note">
+                <h2>Since you are Late for the class 😜</h2>
+                <h2>Complete the Punishment to get access to <br> <a href="/notes_section.html" target="_blank">Class
+                        Notes</a> and get your <a href="/attendance.html">Attendance</a> <br> Marked 🤫</h2>
+                <h4>Click on the <button onclick="punish()">Button</button> to get punishment</h4><br>
+                <span id="sp"></span>
+            </div>
+        </section>
+    </div><br><br>
+    <footer>
+        <p>All Right Reserved &copy; 2023</p>
+        <div class="foot">
+            <p>ABHINAV CHOUDHARY</p>
+            <p>DIKSHA NARULA</p>
+            <p>GURSIMAR KAUR</p>
+            <p>ISHA BHATT</p>
+        </div>
+    </footer>
+    <!-- <footer>
+        <p>All Right Reserved &copy;</p>
+        <p>ABHINAV   DIKSHA   GURSIMAR   ISHA</p>
+    </footer> -->
+</body>
+
+</html>

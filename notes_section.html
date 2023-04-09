@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collect yout Notes</title>
+    <link rel="stylesheet" href="CSS/style5.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/logo2.png" alt="">
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="/index2.html" target="_blank">Home</a></li>
+                    <li><a href="/attendance.html" target="_blank">Current Week Attendance</a></li>
+                    <li><a href="/punishment.html" target="_blank">Punishmnet Cell</a></li>
+                    <li><a href="/class_discussion.html" target="_blank">Class Discussion</a></li>
+                    <li><a href="/notes_section.html">Notes Section</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="both">
+        <div id="notes">
+            <h2>Click TO Download <button onclick="note()"><h2>OPERATING SYSTEM theory</h2></button> Notes</h2>
+            <h2>Click TO Download <button onclick="note()"><h2>OPERATING SYSTEM Lab</h2></button> Notes</h2>
+            <h2>Click TO Download <button onclick="note()"><h2>SOFTWARE ENGINEERING</h2></button> Notes</h2>
+            <h2>Click TO Download <button onclick="note()"><h2>DBMS</h2></button> Notes</h2>
+            <h2>Click TO Download <button onclick="note()"><h2>WEB DESIGNING</h2></button> Notes</h2>
+            <h2><span id="download" style="visibility: hidden;"><a style="color: blue;" href="/img/download.jpg" downlaod>DOWNLOAD NOW</a></span></h2>
+        </div>
+        <div id="image">
+            <img class="image "src="/img/notesimg.jpg" alt="">
+        </div>
+    </div>
+    <footer>
+        <p>All Right Reserved &copy; 2023</p>
+        <div class="foot">
+            <p>ABHINAV CHOUDHARY</p>
+            <p>DIKSHA NARULA</p>
+            <p>GURSIMAR KAUR</p>
+            <p>ISHA BHATT</p>
+        </div>
+    </footer>
+    <script>
+        // let page = window.open("attendance.html");
+        //     page.addEventListener('DOMContentLoaded',()=>{
+        //         const tbl=document.getElementById("tbl").rows[1].cells[8];
+        //         console.log(tbl);
+        //     })
+        // l
+        function note(){
+            x=localStorage.getItem('val1');
+            if(x==0){
+                document.getElementById("download").style.visibility="visible";
+            }
+            else{
+                alert('You dont have access to get the notes');
+                alert("complete the punishment to get access",);
+                window.open("punishment.html");
+            }
+        }
+
+    </script>
+</body>
+</html>

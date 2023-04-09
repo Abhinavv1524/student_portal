@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script>
+        function play(){
+            document.getElementById("intro").style.visibility="visible";;
+        }
+        setTimeout ('play()',2000)
+        function show(){
+            document.getElementById("all").style.visibility="visible";
+            // document.getElementsByTagName("h1")[1].style.visibility="visible";
+        }
+    </script>
+</head>
+<body>
+    
+    <!-- <div class="conti">
+        <img class="bgimg" src="/img/bg3.avif" alt="">
+    </div> -->
+    <header>
+        <div class="logo">
+            <img src="/img/logo2.png" alt="">
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="/index2.html">Home</a></li>
+                    <li><a href="/attendance.html" target="_blank">Current Week Attendance</a></li>
+                    <li><a href="/punishment.html" target="_blank">Punishmnet Cell</a></li>
+                    <li><a href="/class_discussion.html" target="_blank">Class Discussion</a></li>
+                    <li><a href="/notes_section.html"target="_blank">Notes Section</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- <section id="content">
+        <h1>WELCOME TO PUNISHMENT CELL</h1>
+        <video src="/img/punishment.mp4" autoplay loop ></video>
+    </section> -->
+    <div id="home"></div>
+    <section id="intro" style="visibility: hidden;">
+        <div class="intro">
+            <h1>WELCOME TO THE STUDENT SECTION</h1>
+            <h2>click to view details:</h2><br>
+            <button onclick="show()">click here</button>
+        </div>
+
+    </section><br>
+    <section id="all"style="visibility: hidden;">
+
+    
+    <!-- <h1 style="visibility: hidden;">STUDENT DETAILS</h1> -->
+    <section id="details" class="ApplyAll"  >
+        <div class="header">
+            <h2>STUDENT DETAILS</h2>
+        </div>
+        <div class="insidedetails">
+            
+            <div class="photo">
+                <img class="adm1" src="/img/admin1.jpg" alt="">
+            </div>
+            <div class="details">
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td>Rajat Sharma</td>
+                    </tr>
+                    <tr>
+                        <td>Course:</td>
+                        <td>BCA</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number:</td>
+                        <td>+91 62841-70422</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>Bi</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="link ApplyAll">
+        <div class="header">    
+            <h2>HOT LINKS</h2>
+        </div>
+        <div class="updates">
+            <table>
+                <tr>
+                    <td>Get your Notes <a href="/notes_section.html">Here</a></td>
+                </tr>
+                <tr>
+                    <td>Check your <a href="/attendance.html">Attendance</a></td>
+                </tr>
+                <tr>
+                    <td>follow us on -->>></td>
+                </tr>
+                <tr>
+                    <td><a href="">INSTAGRAM</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">FACEBOOK</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">TWITTER</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="news ApplyAll">
+        <div class="header">
+            <h2>NOTIFICATION</h2>
+        </div>
+        <div class="notify">
+            <table>
+                <tr>
+                    <td>5 students of BCA are suspended</td>
+                </tr>
+                <tr>
+                    <td>Harpreet Singh - presentation on 12 april</td>
+                </tr>
+                <tr>
+                    <td>GK upload task till 11:55 on sunday</td>
+                </tr>
+                <tr>
+                    <td>Consumer Hub on 12 april</td>
+                </tr>
+                <tr>
+                    <td><a href="">DATSHEET FOR MSE 2</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">CLASS CALENDER</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    </section>
+</div><br>
+    <footer>
+        <p>All Right Reserved &copy; 2023</p>
+        <div class="foot">
+            <p>ABHINAV CHOUDHARY</p>
+            <p>DIKSHA NARULA</p>
+            <p>GURSIMAR KAUR</p>
+            <p>ISHA BHATT</p>
+        </div>
+    </footer>
+</body>
+</html>

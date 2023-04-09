@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <script>
+        function nextpage(){
+            let value1=document.forms["my-form"]["class"].value;
+            let value2=document.forms["my-form"]["rno"].value;
+            if(value1=="" || value2=="")
+            {
+                alert("enter class name and roll number");
+                // window.open("http://www.google.com");
+            }
+            else
+            {
+                window.open("index2.html");
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="both">
+    <div class="img">
+        <img src="/img/img2.jpg" alt="">
+    </div>
+    <div id="container">
+        <div class="logo">
+            <img class="lg" src="/img/logo2.png" alt="">
+        </div>
+        <div class="data">
+
+            <h1>LOGIN PORTAL</h1>
+            <form action="" name="my-form">
+                <table>
+                    <tr>
+                        <td>CLASS NAME</td>
+                        <td><input type="text" name="class"></td>
+                    </tr>
+                    <tr>
+                        <td>ROLL NUMBER</td>
+                        <td><input type="number" name="rno"></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="nextpage()">submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
